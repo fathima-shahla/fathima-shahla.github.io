@@ -1,0 +1,592 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: #fff;
+    font-family: 'Montserrat', 'Arial', sans-serif;
+    font-weight: 300;
+    font-size: 20px; /*overall font size*/
+    text-rendering: optimizeLegibility;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 10px auto 0 auto;
+    
+}
+
+/*header {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/back.jpg.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin-top: 50px;
+}*/
+
+section {
+    padding: 30px;
+    
+}
+
+.logo {
+    position: relative;
+    height: 45px;
+    width: auto;
+}
+
+h1 {
+    text-align: center;
+    font-size: 200%;
+    font-weight: 600; 
+    color: #000;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 120%;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+h5 {
+    margin-top: 5px;
+    text-align: center;
+    text-transform:uppercase;
+    font-weight: 600;
+    color: #5f5d5d;
+    letter-spacing: 4px;    
+}
+
+h5:after {
+    display: block;
+    height: 2px;
+    background-color: #b7b5b5;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+
+.company-name {
+    position:relative;
+    text-align:left;
+    margin-left: 30px;
+}
+    
+/*mobile navi*/
+.mobile-nav-icon {
+    float: right;
+    margin-top: 10px;
+    cursor: pointer;
+    display: none;
+    margin-right: 15px;
+}
+
+.mobile-nav-icon i{
+    font-size: 200%;
+    color: #000000;
+    
+}
+
+
+
+/*------Sticky navigation--------*/
+.sticky {
+    position: fixed; /*the navigation stays at a point aways irrespective of navigation*/
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.96);
+    box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
+}
+
+.sticky .main-nav {margin-top: 15px;}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    padding: 5px 0;
+    color: #000000;
+}
+
+.sticky .logo {
+    display: none;
+}
+
+
+/* Slideshow container */
+.slideshow-container { 
+    max-width: 700px;
+    max-height: 1000px;
+    position: relative;
+    margin: 0 auto 0 auto;
+}
+
+.mySlides img {
+    -o-object-fit: contain;
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+/* Next & previous buttons*/ 
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: background-color 0.6s ease;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+.btn {
+    position: absolute;
+    left: 600px;
+    font-size: 80%;
+    padding: 20px 20px;
+    font-weight: 500;
+    text-decoration:none;
+    color: #fdfbfb;
+    background-color: rgba(118, 116, 116, 0.7);
+    border-radius: 10px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    letter-spacing: 2px;
+    
+}
+
+
+
+.main-nav {
+    float: right;
+    list-style: none;
+}
+
+.main-nav li {
+    display: inline-block;
+    margin-left: 50px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    padding: 5px 0;
+    color: #000;
+    text-decoration: none;
+    text-transform:uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+    
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+    border-bottom: 2px solid #000;
+} 
+
+
+
+/*-----section shopstyle ------*/
+
+.section-shopstyle {
+    background-color: rgb(245, 245, 245);
+    margin-top: 20px;
+}
+
+.box {
+    margin-left: 10px; 
+    margin-right: 6px;
+    background-color: #fff;
+}
+
+.box img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    
+}
+
+.box p {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    font-size: 70%;
+    text-align:center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: #908f8f;
+    font-weight: 400;
+    letter-spacing: 2px;
+    line-height: 150%;
+    word-spacing: 2px;
+}
+
+
+/*---- section-studio--------*/
+
+.section-customize {
+    width: 100%;
+    height: 50vh;
+}
+
+.studio-head p {
+    margin-top: 30px;
+    font-family: 'Arizonia', sans-serif;
+    font-size: 350%;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+
+.studio-body p {
+    font-size: 80%;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #797474;
+    letter-spacing: 1px
+    
+}
+
+
+/*---- section-customers--------*/
+.section-customers {
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url(images/aaron-huber-384315.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/aaron-huber-384315.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 80vh; 
+    background-attachment: fixed;
+    color: #ffffff;
+}
+
+.customer p {
+    color: #ffffff;
+    font-size: 170%;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 20px;
+}
+
+blockquote {
+    font-size: 100%;
+    padding: 2%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 40px;
+    
+}
+
+blockquote:before {    /*now this will come before the block code*/
+    content: "\201C";
+    font-size: 500%;
+    display: block;
+    position: absolute; /*whenever any element is made absolute make sure its parent is relative*/
+    top: -5px;
+    left: -5px;
+}
+
+cite {
+    font-size: 90%;
+    margin-top: 20px;
+    display: block; /*block element so a line foe itself*/
+}
+
+
+cite img {
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+
+/*----- section - contact form --------*/
+.section-form {
+    width: 100%;
+    margin: 20px auto;
+}
+
+input[type=text],
+input[type=email],
+textarea,
+select {
+    width: 60%;
+    padding: 7px;
+    border-radius: 3px;
+    border: 1px solid #c1c1c1;
+    font-size: 80%;
+}
+
+/*--------- section-fmily-------------*/
+
+.section-family{
+    background-color: rgb(245, 245, 245);
+    width: 100%;
+    height: 50vh;
+    
+}
+
+.fam {
+    width: 100%;
+}
+
+
+.text6 {
+    text-align: center;
+    font-size: 300%;
+    color: #5b5a6d;
+}
+
+.text7 {
+    font-family:'Arizonia';
+    padding: 10px 10px;
+    color:#5b5a6d;
+    font-weight: 400;
+    font-size: 250%;
+    border: 2px;
+    border-style: dashed;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.btn2 {
+    position: relative;
+    left: 35%;
+    font-size: 90%;
+    padding: 20px 20px;
+    font-weight: 500;
+    text-decoration:none;
+    color: #fdfbfb;
+    background-color: rgba(118, 116, 116, 0.7);
+    border-radius: 10px;
+    -ms-flex-item-align: center;
+    align-self: center;
+    letter-spacing: 2px;
+       
+}
+
+.text9 {
+    font-size: 80%;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 3px;
+    word-spacing: 3px;
+}
+
+.text10 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+/*------------footer------------*/
+footer {
+    width: 100%;
+    height: 40vh;
+    background-color: #333;
+    padding: 50px;
+    font-size: 80%;  /*changing the font size here affects all text in footer*/
+}
+
+.footer-nav {
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: colour 0.2s;
+    transition: colour 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active {
+    color: #ddd;
+}
+
+.social-links li a:link,
+.social-liks li a:active {
+    font-size: 170%;    
+}
+
+.footer-head {
+    list-style: none;
+}
+
+.footer-head li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 80%;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.footer-head li a:link,
+.footer-head li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: colour 0.2s;
+    transition: colour 0.2s;
+}
+
+.footer-head li a:hover,
+.footer-head li a:active {
+    color: #ddd;
+}
+
+.footer-body {
+    list-style: none;
+}
+
+.footer-body li {
+    margin-right: 20px;
+    font-size: 80%;
+    text-transform: capitalize;
+    font-weight: 500;
+}
+
+.footer-body li a:link,
+.footer-body li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+    -webkit-transition: colour 0.2s;
+    transition: colour 0.2s;
+}
+
+.footer-body li a:hover,
+.footer-body li a:active {
+    color: #ddd;
+}
+
+
+
+
+.icon  {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #3b3b55;
+    font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align the text and icons*/
+    line-height: 120%; 
+    vertical-align: middle;
+    margin-top: -5px; /*opp of postve margin,postv margin gives space and negtv margin takes the space*/
+}
+
+.foot p {
+    font-weight: 200;
+    color: #fff;
+    text-align: center;
+}
+
+/* ----- animations -------*/
+
+.js--wp-1,
+.js--wp-2 {
+    opacity: 0;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+}
+
+.js--wp-3 {
+     -webkit-animation-duration: 1s;
+     animation-duration: 1s;
+}
+
+.js--wp-1 .animated,
+.js--wp-2 .animated{
+    opacity: 1;
+}

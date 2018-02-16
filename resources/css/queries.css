@@ -1,0 +1,190 @@
+/*big tablets to 1200px*/
+@media only screen and (max-width: 1200px) {
+    
+    .logo {
+    position: relative;
+    height: 45px;
+    width: auto;
+    margin-top: 5px;
+    }
+    
+    .row { padding: 0 2%; }
+    
+    .box { width: 100%; }
+    
+    .box p {
+    margin-left: 10px;
+    font-size: 90%;
+    }   
+    
+    .section-customize { height: 45vh; }   
+    
+    .studio-head p {
+    margin-top: 5px;
+    font-size: 300%;
+    text-align: center;
+    margin-bottom: 10px;
+    
+    }
+    
+    .btn {
+        margin-top: 10px;
+        left: 42%;
+        align-self: center;
+        }
+    
+    .section-customers { height: auto;}
+
+    .section-form { margin: 0 auto;}
+
+    .text9 { font-size: 70%;}
+    
+    .section-family { height: auto;}
+    
+    footer { height: auto;}
+
+/*ipad in portrit model-small rablet to big tablet:768 to 1023*/
+@media only screen and (max-width: 1023px) {
+    
+    .main-nav {
+        margin-top: 5px;
+        font-size: 75%;
+    }
+    
+    .section-customers {
+        height: auto;
+    }
+    
+    blockquote {
+    margin-top: 20px;
+    font-size: 80%;
+    }
+    
+    .text6 {
+    font-size: 250%;
+    }
+    
+    .text7 {
+    font-size: 180%;
+    }
+    
+    .text9 {
+    text-align: center;
+    }
+    
+    footer {
+    padding: 20px;
+    font-size: 50%;  
+    }
+    
+    .footer-nav,
+    .social-links {
+        float: none;
+        text-align: center;
+        line-height: 20px;
+    }
+ 
+}
+
+/*481-767- small fones to small tablets*/
+@media only screen and (max-width: 767px) {
+    
+    .main-nav {display: none;}
+    
+    .mobile-nav-icon {display: inline-block;}
+    
+    .main-nav {
+        float: left;
+        margin-top: 35px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        padding: 10px 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav {
+        margin-top: 10px;
+        margin-bottom: 15px;}
+
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited {
+        padding: 10px 0; }
+    .sticky .mobile-nav-icon i {margin-top: 10px;}
+    .sticky .mobile-nav-icon i {color: #000000;}
+    body {
+        font-size: 16px;
+    }
+    
+    section {
+        padding: 10px;
+    }
+    
+    .section-customize {
+        height: 40vh;
+    }
+    
+   
+    
+    .col {
+        width: 100%;
+    }
+
+
+    .section-form {
+        text-align:center;
+    }
+    
+    .fam {
+        margin: 10px 10px;
+    }
+    
+    .text9,
+    .text10 {
+        margin: 5px 5px;
+    }
+    
+    .footer-head {
+        text-align: center;
+        line-height: 10px;
+    }
+    
+}
+    
+
+/*small phones: from 0 to 480px*/
+@media only screen and (max-width: 480px) {
+
+        .section-customize {
+        height: 40vh;
+    }
+    .btn {
+        margin-top: 10px;
+        left: 35%;
+        }
+    
+    .section-form {
+        margin-bottom: 15px;
+    }
+
+    
+    .fam {
+        margin: 0 0;
+    }
+    
+    .text9,
+    .text10 {
+        margin: 10px 10px;
+    }
+    
+}
+
+
